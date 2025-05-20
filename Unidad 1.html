@@ -1,0 +1,579 @@
+<html>
+
+
+<head>
+<title>
+Unidad 1 Arquitectura de computo
+</title>
+</head>
+
+<font face="arial">
+<body bgcolor="#d6d7c6" text="#000000">
+<p>
+<p>
+<h2>
+1.2 Análisis de componentes
+</h2>
+</p>
+
+
+El análisis de componentes es esencial para comprender cómo
+funcionan y se interconectan los diferentes elementos de un sistema
+operativo.
+Esto incluye la Unidad Central de Procesamiento (CPU), la memoria
+(RAM, ROM, caché), los dispositivos de almacenamiento (HDD, SSD)
+y los dispositivos de entrada/salida. El análisis también abarca la
+evaluación del rendimiento, la eficiencia energética y el modelado y
+simulación de los componentes.
+
+
+<p>
+<h2>
+Componentes principales
+</h2>
+</p>
+
+<h3>
+Placa Madre (Motherboard)
+</h3>
+La placa madre es el componente principal que interconecta todos los demás componentes de lacomputadora que permiten la comunicación entre los diferentes componentes.Actúa como una
+plataforma para la instalación de la CPU, la RAM, las tarjetas de expansión y otros periféricos.
+
+
+<p>
+<h3>
+Unidad Central de Procesamiento (CPU)
+</h3>
+La CPU se encarga de ejecutar instrucciones y procesar datos compuesto por Unidad de Control (CU) que es la que coordina las operaciones de la computadora dirigiendo el flujo de datos entre los diferentes componentes.
+</p>
+
+<p>
+Memoria RAM (Random Access Memory)
+Almacena datos y programas que están en uso en un momento dado, es una memoria volátil, lo que significa que los datos se pierden cuando la computadora se apaga.
+</p>
+<p>
+<h3>
+Corriente de Energía (Power Supply)
+</h3>
+La fuente de alimentación (PSU) proporciona la energía necesaria para que todos los componentes de la computadora funcionen.Regula y distribuye la energía de manera eficiente a la placa madre, la CPU, la memoria y otros periféricos.
+</p>
+
+</p>
+
+<h2>
+1.2.1 Arquitecturas
+</h2>
+Las arquitecturas de computadoras se refiere al diseño y organización de los componentes fundamentales de un sistema informático. Este campo abarca tanto el hardware como el
+software, y es esencial para determinar el rendimiento, la eficiencia y la capacidad de una computadora para realizar tareas específicas.
+
+<h2>
+Arquitecturas importantes
+</h2>
+1. Arquitectura von Neumann
+<br> 2. Arquitectura Harvard </b>
+<br> 3. Arquitectura CISC (Complex Instruction Set Computing) </b>
+<br> 4. Arquitectura RISC (Reduced Instruction Set Computing) </b> 
+<br> 5. Arquitecturas Híbridas </b>
+<br> 6. Arquitectura SIMD (Single Instruction, Multiple Data) </b>
+<br> 7. Arquitectura MIMD (Multiple Instruction, Multiple Data) </b>
+<br> 8. Arquitectura Multinúcleo </b>
+<br> 9. Arquitectura de Computación Cuántica </b>
+<br> 10. Arquitectura Neuromórfica </b>
+
+
+<h2>
+1.2.1.1 Unidad Central de Procesamiento
+</h2>
+Definición: Es el "cerebro" de la computadora, encargado de ejecutar instrucciones y procesar datos.
+
+<h2>
+Componentes
+</h2>
+Unidad de Control(CU):Coordina y gestiona la ejecucion de instrucciones.
+<br>Unidad Aritmética Lógica(ALU):Realiza cálculos matemáticos y operaciones lógicas.</b>
+<br>Registros:Almacenan datos temporalmente para procesarlos rápidamente.</b>
+<br>Buses:Transportan datos entre laCPU, memoria y otros dispositivos.</b>
+
+<center>
+  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTEhIWFRUXFRgYFxgXFxcbGhoXFxcWFxkaFxYYHSggGBolGxgYITEhJSkrLjEuFx8zODMtNygtLisBCgoKDg0OGxAQGi0dHyUvLS0tLS8uLS0tLS0tKy0tLS0tLS0zLS0tLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBQcGBAj/xABPEAABAwIDAwcDEAgFAwUBAAABAgMRACEEEjEiQVEFBhMjMmFxBzORFBUkNEJDUlNicoGSobHB0RZUc6Kys9LwJURj4fGCtMI1g5Oj0xf/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAuEQACAQIDBgYCAwEBAAAAAAAAAQIDESEx8AQSMlFhsRNBgZGh0RRxIiMzwUL/2gAMAwEAAhEDEQA/ANxooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAIcWwlxCkKulQIPgax/lHkcYfFPpbCjDS7oVCx2SCkSMxuAe8DjWscuPKRh3VpMKS2og8CB31iPJ2KW+8+pQC1BpyAVZVamciryTvnu3WofCznqW8SJZPtEIc6tyBhERDsgXNknNdHE8B30/GsHrurc0YT520fBnN5uSRm4lZtuiew+wshtu+ERGVxUESZKBls3aVDeI41JjWPP9W3owT1hIyiwOnmtQRHuVHeK59djd6+R2IaOZzYcviWhdy0AIIzbWymYy7ySnhSIbOYbDntpWrhvCbZ9qxEQnWQlN70rzG051afbLUy4TYpSBntdJmANxV3UwNbQ6tHttWrh1y+72bqtKe7J30mNPEMI0ZZlDp6x7Vy9s4k7UdJaIm+2fCHDIVla2Hp6Fy4XtSYuNq7k6jiruqfCsEFkdGPOPC7hkEZ7ExJct2uAPGvPg2LNdSLsu2DhmZuAQLO/CPEq4U9dxDOjOWyHB7EsUL0Jjzd7g2nhCRvpcSyYe6tyzLXvlok2G15s3k9yqalnYHVJPsOxQ4ROk9Hs21k+KeBl+JZkPHo246Fo2cMRJMi3mrXHceNCvlrP9g7EmKbPW9W6dtoecPdbtWbvrxKuFItm6thz2ynVyJgJ7QzWAsU8dim4tsS9LSe2zq4dDEFVvNd3zrUONXV1aR7KRq4d4SQViNDOzrGZPCjWsQ89fQrLRlHVu3fcmXNbHXasrgN4HfUeFT5rq3vfjdwTYm52vOa271cKexhyVI6tPthwnM4ZmFWVa6oEp7gKjw2GMtDogLve+GxlVpjzkTfuP0LXfqCtfXToRMoMIIQ8PY7hsu9yLplV1m0jdI4VG4k5VbDgjCpNnJAk+52toGL8AkcacwycrcN64dzR05pkdnZEOX2jxPdTHcPsnq0x6lEFKyLTq2I7Pwkz8HxLWtXH5a+gxaCOl2HbNtAdYIiSCJzdjXa+fws7FoMubD3nWhdcfBMTmsm9jxPdS4pmelHRpjIz74YAnUW81aCLaK40YnDyp2Wh55rVzuEZrXbJMDvUeEUlr46lNa9+gwpOY7Lvtm8rAkBI7QzWHweMJ410Xk25vocfcfWVZm1yAojNmzHLmI3DKPG1c8WpWdge2d7hO62e151T4oqXmTyk61yglpJKErdggmdkuAFJnXXWtaKMK9lZvHE3ZNOpE0taGoUUV48dyoyzHSuJRMxO+In7xQJu2Z7KKqf0kwvx6PT/tQOceF/WG/TTsT4kOaLaiqj9JcJ+sN+ml/STC/rDfppD348y2oqp/SPC/rDfpo/STC/rDfpoDfjzLaiqkc48L+sN/Wp36Q4X9Yb+sKA348y0oqq/SLC/rDf1hS/pDhf1hv6woDfjzLSiqsc4cL+sN/WFL+kOF/WG/rCgXiQ5os6Kq/wBIcL+sN/WFL+kOF/WG/rCnYPEjzQc51RhHzwaV91YHyC+FKxCSGzLTmysxmM+5XGzbW+/dEjaucvLWHXhX0IeQpSmlAAKEkkWArMEtKKRtNmcIpuFo1USIQ4QqwE2I4qPCpk2o2sZNwc73WQYl5JQ4R6mM4RCpBjNBO2ExaPg7yU99OxzqR08epveFTNottxF027E6J35rpiUrKXIU2SrDNi7cFSkkkk7VnEiYHEj4NLiwsl6Ft3UwpJ6M6pIzOAZvOCOzpCUjeaxSevQ334eTWrjsQ8kLc2cMIxLfupyhSUjNptSZEWiVGTFOayFSSRhxGKUNZKcybDgombG0ZkiLQIcYopKiVtJBxbSknoydQlOZO1cnRXDaO8VJg3hKYdZtinIyoNpBkIObaBm/AqPCpawGmniit5chLCYDaYdcGwq6dpWzoMw+VwjjelS0otuOApytFAVJVMOLyDLBvfXSrbl1YOHRCmz1jsZARAznsXMt9/zar8MypWHxRzqShKmStISCFy9YKUeyAb21NdcMIXOWa3qg3ENFl1bThEtqSFZFKIgoKhGY/KTUPSpk65csa+6t8qYkaTXr5VbWjGPpKlOuJdTKlgJKiWZEgQBCTA+aK84JkqgTlgptpHamfp+mtVjic01uyY5GGccktIccABMJClEJEXVEwL76iS4IuTmsRf5Ag6/CJ1/5tOTmEuBZcaYWelAPTYlTAEgyE5ZCwYEndHfVWyTlICUwZ0UCBsJBgntBIiD9NK6btYqUbRUhGnBAgkLmZ3SVDvgWndUTbohUgqJGycxGVRNzA1tuqdBOUADZttW0zpMxO42rxg927X++61NpCg2X/JmNS4Mpab2GFIuYz2tBiEq19J4W9TgSUq2WSDhUmQQJIN1JEbJE3G/Z4RRhljIiVtkHDLkLBEi1lkHZEWnftVI+8Mqttog4ZGqSCbkjNeErEiBvKhawrilxYI9COEcQxeXrbMRlaUDNrHti2lro4JHwrmLQkKclLIh5s3UDAIG0bXBMiN20Z30YzECXZW1oyZyHUHtXPnPk/JR30uJeAUs52vPNkbJN4AJTe5kEEDcFcZqNdi7466jClOa6WRGJ3mYBHGNqd3AqHwbefmiiOU24AA6ZNgZA61Oh4V6g4kK7bQ9kmITpKfc32pkyd2Y3tb2821A4jDQpo+yTZAggdINL3TeZ70itabszKsrx10NtTTqRNLWhoFcB5UcSho4ZbiM6AV5k8Qco32PGDwrv6zjyxtlTbUCYzH7UU0r4GNd2jf8AXcy/lbEocdUttGRJiE24AGwsPCvLBpWkjfXTc3ua3qlCnHFltoEjZTmWtQAJyjQASJUbaCtcIo5VecsDyt8ugAZs5XEkjowCsDKDGWwyW8bxvpp5daHZSu1kz0eiPNTs3i88e+rdfMtmdl5+O8t/gipE8xmj7876W/6KxtTOhQqlKrl9o+5cyz/pzljNrl16S/hbupRy80dQu42uxou7kbO8gRwjdV8eYrJ9+d9Lf9FSJ8nzCrl94fS3/RRu0h7tXVjnvX1G8Lmxt0faOyq2XeiAO/00evqBolybkSG9U2b9zoEyDxJroVeTxgf5h30t/dkqNfMZv45z9z+mjdphu1dWOd9fG9yXIBhM9Hoi6J2dyiSe7jVTjcWlSypIUAb3iZ1OlonSK7JXMZv45z/6/wCmozzDa+Oc/c/ppx8OLuiZU6kszihiPH/mlOJ8fTXap5hNG3Tr/c/KvQjyfMb33foLf9Fab8SPx5cjgBifH7aX1SeJ9JrvXOYWHHv7vpb/AKK8quY7Pxrh+lH9NHiRD8eXI4z1UeJ9JpPVB4n0muuVzKbHvq/3fyrzvc0Ei4cX9UUeJEPx5cjmkunifSaXOeJ9JqflLktbJvcEwDEcdx8D6K8oVVppmco7uBZs48pbCgCMrjKdgSojNcxeSd54TV1yHyh0mXrFe2nLBpWkK7By6XObvKzXOBBDMwqC81GWxMHdNv8Airnm0skpgvXxS/cpEwlQn5MRBFphR31yVlaWup17LjBvqJy66fU6AVZuscIlsptnN0GOxfTvHC1WyG+hxBcKQsKa6IFREqLkKhMwrZnXSrPlw+x0XcMuuHbSBO0doQNk37PyjwrwYNfVYlCW1rcUW8mVAUU5XZUonVAi0jWYq6f+ZnJ/265Ej+HYOIxPQ4hhplLqcilrVCiUjMUr1VCiqSarl4nKTtpMEpzAqhQFpSd6SLjuroElx7EYpbWGZUC4iEYoIbKBkAsgKgEqCiYJ1E614uScV0fSy+0wemEj1MrEJsXJ6PJohOkXm1WpNEypqTH8kOJKSVrwglxJBxLCnpEEym8gceIiqhpagm0RfsylJ3WG4QNOFPQ+ooIkKTmJz5csmT6ARfLumpfVK84VlGYpiMuon4P41ol5mMpu27yG4cLUpDcRmUlNyYGZQuROk3qDENdGtbZuUKKSRoSDciRN7V6+SlkraQBCS6jaAggkgWX9tLi0BJfSFBZGIUM61ZnVAbyoWUDFzScrMqEU4tl5h1kITK1D2MqczZNrdu10wLHuPwrueesrbV7WROZtU6myzHauQDxKvGkZMIRtOJjDKPZCsuhvs7abW4Ze+nPLISu7o9jIEFKTBk7KjEmbgK3Qu9cTz1z/AEd6y1yExjhHS9YdGR5szM8I87pGnuOFnYhw5nNs3fbsGlTokbNu2IuOA74pcWtUu7T2jIjKnWezp2r9v5Xybq+s5l7Tpl9oQEC8BNtNlQsZ3gJ41NsNdOhT189RodObtm+JMQ2r4JkIt4hX/WfH2c3VziMNtz7JNshTPWi6CR2ZN+891eXMc42nT7KPuAAco3W2csGRvCVWvXs5uq9kYbbWZxJMKQAD1gEiwy66cSbWqoZ6+iKvC9cuptCKdTU06txhVHzvW0MM4HYuk5Adc/uY75q8rN/LIqG2oMTmHpUiacczKu7QZl7sFRjTOYruuZr6i202Pche6ffFqJI33I9ArgWNB86tH5hsbKVcUq/mLH/jV1OEw2Xj9C/TyWjeJ7yTP+1P9bW/gD7fzqwCaUCsLHceBPJrfwB9v50o5PR8Afb+dWAFNItTA8PqBHwE/b+dMPJrfxaft/OrEJoAoArPWtv4tP2/nSetbXxaf3vzqzKaSKAuVh5Ka+LT+9+dJ62N/AT9v51aZaaUUBcrVcmt/AT9v51Erkpv4Cft/OrYppqhQBTK5Lb+An7fzry4nkdPuRlI0IP9g10GWoXU0guZhzoxSlJWhdymPtWlWYeM/b6OWTXU89kw858xB/fA/CuWTXRT4Tk2niPfy0glbeyst52ujyqhMWmb2MyZ17Iq35stnY2Hr4pZu4L5Um6tqxEWG8JnfVKVEsFJgjpmoCjA7U/33xXQc3mAUtkNf5pebM6bGFEZ+J0Ke7Lxvy1lZm2zy/ryywIuWxDCZDgBdcMrVIJzqkqgnKuZtxzVUYPFqbUCFrQDAWW1ZVZZkiYubTw0q25bbhhuUqT1rk7RVfMoEL4uWgnuPGqRlYzDMCUggqTMSN8bxYRXRSV4nLWdp+xY8uclZYdLOLKFnadxRbVmKgCjKWzJlIOvARUPJuPdZCgy6W5WCYCdU2B2huzk1Dylim3IDba20iZBfccSdMuVK7JgSPppEJBmeP35Z+zN6KqMf42ZFWf8rxFJ2DLk7RJRvkg7c+N/pqULPSeeEkec3R8GNKhcSkiCTnEQLQEAceNKG2s05lZOMXKuEcKswfUkwCh1eZQ6PpE5kG8JgZlHeRE2qF1tB6VxpJCOnUGyLJDZJIGU7WndU3JISl1kyouJdQcgi4BBgE2zHT6aZi3ZU/mGVw4layhQzLAJUSC4LHWI/OoeaOmlbdbL7DJIQghLojDK7KwYmDKJVtTw3bFuEriSErhLojDJEBQIEzI7ULSRv3BJ403DMnIghv8AyqoyOHiJLY3HSRptJ4Xc9hjlX1Zj1MjRxUak7HFFr+A434nnrmdqWGuQuLQZd2XtGUwVjQns9rsGTt6ypXCnvoOZzZdMvtjtAWCUGDtWG8HWSmjFYc9d1R7LOrpiJ3/6Vj+/T32TLgLZ883q4b2T2r9m9u890BYa9Ctdzy4t8NguLDwT6qk7WoAAkgHZiBEahI42m5rY9C8Vh0pU4T6oCjmiCFLSQrWxvoLXNeDl9opacJSsdfJJXm3CM4Jg93dl+mHmEPZ7Aj3aDu1zo4V0U4Jxuc1abT3T6GTTqamnUzoCs38so6tnxV/E3WkVnHlj7DPif4m6qOZjtHB7dzKk1qHMYdSj5qv5rprMkouPE/hWn8wjOHTOoCh/9rn4EVdXIx2biOpmhJ+2hP8Af2f70D+/78KwO4UUUo/Gg0AJSE6+kzVBjuVcW6pTeCwwGVRSp/EShoFJg9G2Ose0NwAm2prwr5keqL8oYt7E/wCmD0TI8G0XPiTuoA9/KfPPk9gq6TFtynUIPSEHvDYVB8ap1eU7CK8y1iXvmND8VA/ZXRcnc2sGxdrCtJMa5AVfWVKvtqzB4f3FMRwp8pKNTyfjQOJaH4qqTC+VHAKMLLrR4LbJ9PRlR+yu3zf3NebG4Jt5JS62hxJ3LSlQ9CgaBkPJvKrGJTmYeQ4BrlUCR85OqT4gV6yK4Xl7ybonp+T1qwz6ZIAUQkm1kntNm245eI31JzF53rfWrCYtOTEtzcgDPl7QIFg4NbWIuNDQB2hpjqbHwpyqar+/tpAZdz7T1zvzG/4xXItmuw5/iHnO9tH8wGuNbVeN5MfSa2pvA5No4j1ueZM5Y6ZoHNprvBq35sNp2dhgRiVjtaSlUJNtonUHdsjdVfi8MptnbhMvtQdd8aA79Ppqy5sOJ2NtkRiXNE7iFWSc20kzc6AmN1Y18zTZLOm/39C8roSlhBCUAB1wbCrjaOybXMe67hxqmw8BaM1xmTIk3k6d1rTV3ywsFhuC0Ycc7FoGZVhe6LWPza8WCJ9TYlOVSsxYGZIEI6wGVkkFM9m281pS4DCpjP0/4Tcv8nllTR6BlkEqHV4gulUEdoKGyAk9+tP5L6QJw5ShtQOIdCc6oKnFNRlXPuIQTPGq/E8lOskF1ktyrLJESoESPGKlwWMWkNwoANulxIKUmFqAQVGbmEqNjbuq/wDzgQ5JSu0ecrUEZPcpMG2ixsqGbRVwakGIc6TME7cRGU3E8NRTZ2DK52iSjvM7fpM1Nn6zz1ynzkfuxMbqs53mxvJS152kgCOlQUkgwFyIkjUTqK8eOzdO9nKSsOrzFMhJUFGcoVeOFe/ktUrZAWR1qAEDVJMQsE7xrUOMwsF9UrUUvrTnUQoKgkypQuVn0VDdmbwu4MvWG0lCTlaJOGVEKy5tJymNhQm5+V3U95CYX1bRnDo03wSSUjLYTBKd9qjaUkoTKmiThldoAZo3Kvsxx3yo7rPcykLlbRlhB0iSD2omyhaB3p4VyeZ3eWuQuIQD0uwyLNEmdwtmNuxaMvyTxp7zYzOS2159vVQtIEFQy6G4A3SrcKjxKgC6MzOjR00M9qJ1+T3d9SuqSSvaZEPt7tDs3ibk6Ebr0lfXoPDXqeTH4HOFICW0TiInNMEpnattTw3SBU/M3ktTWLw6ipJ60JITuUHE2PoNKkpBG0yIxCtBJEpJgXuTJngT3V7ubaU+qcNBas+RsajrE2HFO+fm1dOTWBlVirXNnTTqamnVobBWc+WHsMeJ/ibrRqzryu9lj5x/iRVRzMNo4PbueHmrzdwxwyHnWw644VlIVMISlRTYTckiZP8Az0PJbASVAWAAFhAjSwryc0BOEZ8F/wA1yrPCp2l/R99RN4mtJJRVj0iiKRP4UoHppGhXcvctIwredYKlKUENtp7bjiuyhA4nju1ql5zYflBeJw6sM+lpoBHTILiUlR6SVgApObY2ZtXj5tu+r+UMRjFGWsMTh8MDoFEdY5Gkkb+Cxwqg8qCB654EkfFf9waP0I1V15IMFQHiQO6mtuA9lQPgQfurJvKrg0vcrYVtYstthskRISvEOJMEg3uar+fvNVvkroH8I66FkrgqKJSpsJUkpKEp4wQZ++QDvOe/O93BPsNNttqDouV5pTthNoUBoa65KgeyZE7oP0WrJ/K0OkxGBm2duDG7M4gHXxqbn0j1qwjeCwi3AHnHFqUpQzZAEApBSlMAkibaAjfTA01GJQVFIWkqHuQpJP1ZmuJ8r2PdZwzBZdW2S/BKFqSSOicMEpNxIB+iuI5X5K5MZw4XhMcpeKbKSICkhRzAK6OGwUFM5gcxsmNb1Zc8+V1YvkjAvLMrOIKVnSVNoeQTHfln6aANG5Ow7jrODc6ZQhptSxc5yUJ7Rm511m9+IPB+UhsYblPCYpuylZFKgalpaUkn5zagjwTWi83vamG/YNfwJrNOcOI9cuWGWWjmbaKUkiCCG1lx5U8NEDvSONIZrCxekoUaQGgDiuWMOF48JIBBQkEGIIJNjO6q3nhzYw7GHU+2koU2to2JyqStxDRBSd4KwqRGh41eY8f4ij5if4lVN5Rm/YD/AIN/Y82fwpptCmk0cJzjMNpifOt6CT2tw/u01LzYfOx1h9suRDR4K7Fuzc5u8q4UznD5tOvnW+zE9rvt/tNS82CSEbbx9kuaITeAoSNnZAuCN+3apr5nLsH+Pr9C8suTh2yVpV1iz2CmRmVdH+n9txwtV4JxWRxhISS8tpJKjBSUrChF47VpNvDWrXltZ6BvaWZccVC0ATtE5gQLAzOX5XdVXydh8xzF1lsIUmz7kJVMkgcdLjhWtO25iZ1U3Uw6Htw/IzpxLTWKUpIczwoOpJASCSQZKUXAvVTh4IJIMBZEgSO0kAkiwkTFXrLLRcYxBw+FZwxU82roQopcKATKoGZSbGCNZqn5PxhSy8yE+eU1fMRlDbhV2YOYm3Cqi2OcYjFZVJ7RKhoLQEgWvx0tTsrWbtKyxrAzE94iwp7ClksgjZBGU5Ym4376jzrCVACUEjMcu+2+Lbq0OR8iTk1LedvOffE5weyG/dTFzadL143HAVOBqei6VeQDME5cxybJ0tGt692ExSkKZUsHI2oLFonLJICo1ia8mLdzuuuxZbi1wTMZ1KUATvj8Kl5m0H/G3U6ZlzYTK/8AKmcyDxA6w8Nw/wCrXe9xwwuXPeG+02Z1N1fL4eOlqRiyUyt0AYY6oBA+ds7Wlu4HialxDhCVjM4IYTYoBIJzWUctyb33Ga4rYndd21yGYp+7vWD3rRszO4/tbgxwy/RI87dfWJEPo0QZ0T2eKtx7geNNxCzLu277yOwJmbDs2cuDOl08Ke8skrlbp65AEN6wEmE7NiOO8Acany10KevkRD+0NtPtlUQ2eBnIZ03KPEnhXq5urBxGG20K68xCCn3wdgn3H5jhXmQskiFuGcSrRsCQARbZsBcHjtca9fN9c4jDbajOIJGZGWYcF0mLC+nf3VcMyKvDrobGmnU1NOrY0Cs58sCoQx4n70H8K0as38sXYY8Vf+NVHMw2j/P27ns5nEHCteC/5q/96tWO0vwH31U8y/ajXg5/Ncq2w/aX4D+KolmbU+FEwNR4tZCFEdoJMeMGPtp00A6VJZwvkXUn1uIFyHlT9Rsif+mK8HlPwLnq3AvBBLedpBUAYSoPgwo7pChE6waruQuUPWXHvYZ+RhnCCkxMJv0axGoykoVF5TbSDrTDyVpCkKCkqEgpIIIiZBFiKYjLvKIj/GMEQD/lv+6XU/lySSzh4vd7QfIRWmhcW8fwoCo30wMu8qHJ7pGCxLbalobQAogE5TsLTmjRJg37u8U3nelfK+CbxmHYWFMuOILfaWUEIKikAbRBAsLkTFajPjQD/ZouBjv6XYIoyI5FYXiiAMnQtFJVvgJRnOh2Y7pq88oPI63eTWDh8J0PRuB1bCEJCkBTbgVCGxBIUoTF7zxrRlK1MxxNcpy7z/wWGkBzp1j3DO1efdOdhPpJ7qVwKTnLicacLgcJg0K67DJ6VSQQpIShtMFw2aTtKkmDuB3G65j80EYBskkLfWIWoaJA0Q3bsjed58ABY80eWTjMKnEKQEFanNkGYyOLQLnUwNatzRcY00gP9+NKaQUhHL4sf4kn9mn+JVT+UYewH/BH2ut1Div/AFFP7NP8Sqm8pA/w97wR/NbpocsjgecKZbTaetbsDHuuMiOP0V6Oa6DCDkeviXDdSbwlQlW1skRAG8JJ315+cF206Hrm9TA7XH7u+K9PNXDmES2oeyXNXTrBIz/KsI1sBe9Ktmcmwf4+v0efHtPmAoqyLdUW85GpUq6vgq1JB7++vExiFMlaOhacOYDrUdIAU65bjX7q6lrBBYbCmioFT8grm4UdQffp+iy/o8rXJSSlB6CSWFKMESVJIAyiLrvfgT3VUaqSswdJ3vFlPybyspt1pTk9G2txxLaAEpCnAobHDWBwFVaUkQQRrNyNZmK6pXJycpPQjzCV2IKSreUEXI4nw43a/wAnoHSwxcJbI2hEqmSDubsb9yqarRXkJ0pvNnOdKogCMwGgzEgbhABqXCmUkKOUWMCQDumNNRrXQHk1Az9Ro4gC40OWZ4JkiN990Ug5LRPmBHTZdU9kp919JlMagp43fjon8dpnO4kxCQSoAHXNbUGx0sdN03qDvm+8mN+/vtXUp5ObOQDD6uLSbp0TmgGPdWsOANNY5OQcnUkylzhOzYf+5YW3SrhY8dB+O7k7AhtMh1MYZVwQcuml9qY+iBpuc8lWVch0Rh0CJSY1lPygY7R7+NMSzKUjIv2soylwj4N0CZJ0kRvTUj6dhfVrth09ly0GbJM3Ra54DvrnvidXkD4PW2e95BuniIRP0zm+UeFOemVz0sdO2PcibJMTNgDed+yL03EtQXerWbMjzu6bAmfNa34lXAw95JzObDnn2xtOG4hOt7JvI7yOEUk9YdB46v1G3keeIOJOuUAwDr8ECNLZgnvrz81MWtXKDaCtRSH8wCgAc3SpBJA0N9NNa9IZOYbDntkky4bwNVbV4jZG8JTxqDmpgXE49paknKp6JUrMqQ6my491bidDWlK18TGtvbuBugpaRNLWhuFZz5YOwz4q+9FaNWdeV7sM+J/iRVRzMNo4PbuT8zUxhGvBf81dW+HN1+A+8VT8zvajX/ufznKt8PqrwH31EszanwoloBoIoIqSyo5z82mcc10boIUm6HExmQe6bFJ3pNvAgEZm5zf5W5LUThlrW1MyyM6TxKmFSQTxAPjWyUgpiMfw3lWxaDleYZWoaiFtq+kZjHor2/8A9dX+pJ/+c/8A5Vp2JwqHPOISv5yUq+8VWL5q4FRk4LDE/sW/6aBnAOeV109nCNpPe6pX3ITVY75SuUHjla6NJPxTRUr94q+6tWZ5uYNHZweHT3hlv+mrBloIshISOCQB91FwMTPIPK+PjpUvKSd76siB35FR9ia6PkTyUpBCsW/n/wBNkFKfAuq2iPAJ8a0s0tFxHnwGBbYbS0ygIQnspG6TJPeSSSTvJqanUihSGNNIKdTaBHMYn/1Efsk/xKqTymD/AA3E/MT/ADEVHiz/AIin9kP4lU7ykK/w7Ez8AD99NNFMyvCx6lHZ88z2uzqdf71iuh5rIACOrZHslwHb0JCoCtnaJ1B3DKIrncKqMKkkgdc1ciRqd1dJzXWmG9pgeyXYtcA5jCZVcGQc2glIi1TVzMNn4X+y2wbfmoaaMKxA85wURlkJ7em33K41Cy0Clvqmz7GcsFkTpKQcuyu5BVxJ4VPgVJ6mVYcx04sLdo7AvdFu3vyp4mYmcpSgEsGcKsQd8QMqjOyB8LftGoeeupV9ew1bUoVsNH2MkyFkAi90DLYDUjfI76di2AOlhDQ2GjIWdATtRFkCBs/JPGmuqTlUZZUThkmbAqiYJE7JFoG8nus7FLT1t8P2GlXFrGc5HHgjuTxpJa9gb17hiWILmw351rVZsDABNrpJsBuM8KU4aFE9GgRibys2kDtW2iSZTwzJG40rxTLsKw465o8dyQVG95iMu6Cd90GXNcsWxW6+XMmbfCUqbn3JV8mx5BdXI22dpA6NA650XcJ3KIBgdqwIPADjRhWB1UNo7LoA6S9jGWYPWcVfOp2HQkFq7HnXRbcFZjlF7jQz4CKawUwz7X7DqYm0D3APAR294SeND18gtfAxvD7KR0aL4ZWi4JIN8ttkibn5XdT32JSvYbPsdBssxY3KRlsjiN8AU1oJyp8yqcKqb5cxEWJ9yBOu+TwsYgpyueYPsdB4TEyqPcxbZ32+hpCH4vDz0vVtx1JgrMQPdG3m4EZe40Ylm65bR59smXDvCYzSLpJ0G4qJ3RTcXkl3zHvKgd0yBnj6IycE/Kur+UFfmB7IbOoMZgNrvJ4bpJpa7FvXyIMPtDq0e2TMrNpBjPs3JsRw2a9nN9uMThtjL7IUJC83vibLkXUY14DvrwpSkKFmBGJVvmJT9pP7pIG6zuauLBxrLXRoSUPGFIM2LidnS47+7xq4RdzGq0lrobemlpE0tamwVnXle7DPir+JFaLWc+WHsM/9X3oqo5mG0cHt3J+antJlQ0HSJO+D0iyJ8QQas8GuSrwH31k3JXLL7AUGXVICu0LFJ0F0qBE99aDzRxi3WgpyM0XjQwoifsqZxaxHRqqS3TozSGkpRUHQKBQKSaKYCGlNBPGuRTzidW46Wi2pOXCqbbUcuVLr7rS8xCSrOQGyQbJzReDmAOtOlJVNyLym6o5HUpIU7iwhQVeGMSpsJUjIAAEwAQTOW9zUKeVSlBfWtSpcfQhlKU5ZadcbAzBBWCQiSZNyYGgoAvqWufe5wOJStRw/m23XFypxEoaCFEtZ2QVkhR1CRKSJ310FqAFAppozUlIBDTaDTCYpiOYxy/8AEE/sk/xKqLykvg8nvgkbQbAG8kvNyBx2cx+g8KovKHyk5h3FutGFhpABN4KnMkwdYmuI6Z58AuuKWeKlE+gaD6KqMbk1Z7qPYw6EYXMVZQHmtqNNf78Jro+auMGVsh5FsQ4bINgoKIKTubJJJPFWtpq58kmDQt5aVoStIQbKSFCQUXg761dvktkaMtjwQn8qKkFJmFCT3XbmZTgnY6HrUCC8k9WQBJJSNbNGLb7IHgxpw5UDpEe11ohTZjNaEuR7ncLSQDxitb9b2vikfUT+VL63tfFI+on8qjw0XafT5+zIXVylXWAk4ZIu2ZJSTIXeM4mw4k8Jql5zNKW8FJGcdGNpKCL37Y0n/at49b2vim/qJ/Kj1va+Kb+on8qqEVF3RM4TmrXXz9nz1yfh1pcQrKtMKF8qjlHH7a6oO3utAjEZrINkkXKTNwZhStLqitb9b2vikfUT+VHrc18U39RP5U52kKFOcFmvn7Mjw64U31jYh12erNgrMQBezZ48SL2sxi3R7bdkupMtmNbJImzdrHfA41r/AK2s/FN/UT+VJ62s/Et/UT+VR4aLtU6fJkDS5SBnRJw5EKQq6h7lZm3dvO1SOukpVC0ElhES2ZKhMyAe2Pgjj3VsHrYz8S39RP5UnrYz8S39RP5UbiBqfT5MixLnnYcR70oENndqoQbuCNOAT30jq7r22/PIUIbJtCdpN7ncTp2uNa962M/Et/UT+VHrWx8S39RP5UbiC0+nyYJy0+4eka6MFHSlQUhCtDc5d2+/eTVhzEwZTi2FqsS4kZd4GYG/C431tR5KY+Jb+on8qcjk1kEENNgi4IQkEHuMVqnZWRm6UpO7Z6U06kApak6QrO/K6jMlhOkkieEqRetErPvKv/l/n/8AkinHMxr8Hqu5mLjGRQAJIInSPxvatE5oOdUnwV/MVWf40gqSR4n6TMam9xXbcyVdUmfln6C6uKqo/wCJns8f7GdhmpaiCqeFVidg+oziEhYbnbUlSwm90oKAozpYuI9NPzVRcu8mLedZUEpKEphYURcHFYJ0gpOoLbLn2DfTAvFupCgiRmIJCd8ApBIGsAqTfvFV3KruHSSX4laEA2UVFKFkogpvsrcJG8ZiapX+b6vcNInLiUJIygpS4+h1tMkWSW0rRABy54iCa9nJfJGVRzolshewvoiElSmSAENpCEp2FGBNyTN7AFgtzDsFFoMuKSEpWtW2sKdVCQTBWoEqNpIp7nJTKlKUppJKs2adDnGVRy6SQYJiTUWIStL4dQgOAtZCMwSQQsKSb2KTJneIFjeqb1lWVpBbRGYdKZSQ/wCyG3MyhFyEJXZW9ZAkXIBd4nCMNoOdGyoFtVlrzJdKUlKtSQowKnbxyFIC0kqSTAhKjeY0AmJGtU3JvJBQ+VKTbM4QodFlKFqzNoICekOQBIAJgZBG4VZ41gq6MJA2XkLOgskyfE0ASYTlFt0qSnNmSEkhbbiDCswSYcSJByK04V6Jrw8mYdSApS46RxZWuDMaJQkHglASOBIJ31681IBJpilUpNQLV/xTAzHyqG7v7Nr+cmuZ5N82Pp/Cuk8qAs6f9Nr09Mmuc5P82Pp/CtaRz7VkjSfI/wC2HP2Z+9P5VrorIvI8PZDn7L/yFa6KJ5k7NwBS0UVB0BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVnXlcXlDB4GfQpBoopxzMdo4PVdzNXsSFqmI+niZrseZ7uVCOBC0z39Ir/cUtFVV4SNld5M61DlShdFFYo62Ln/CgmiimITNSZqKKAECqJoooAQLpM1FFAwU5SFfhRRQAxS9a8zr4E30vSUUgRnHlGV0jLqwLS2nxhxH41znJ/YFFFa0Tn2ryNK8jw69z9mfvRWuClopzzJ2bhCiiioOgKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z" width="30%">
+</center>
+
+<h2>
+1.2.1.2 Unidad Aritmética Lógica
+</h2>
+Definición: es el componente de laCPU encargado de realizar operaciones matemáticas y lógicas.
+<br>Funciopnes principales:</b>
+<br>Operaciones aritméticas:Suma,resta,multiplicación y división.</b>
+<br>Operaciones lógicas:AND, OR, NOT, XOR.</b>
+<br>Comparaciones:Mayor que, menor que, igual.</b>
+<br>Desplazamientos de bits: Movimientos a la izquierda o derecha en los registros.
+
+<center>
+  <img src="https://i.pinimg.com/564x/32/d8/00/32d8006ed52f32de75a5bd5a75b913e5.jpg" width="30%">
+</center>
+
+<h2>
+1.2.1.3 Registros
+</h2>
+En el contexto de arquitecturas de computadoras, el término
+"Registros" se refiere a pequeños espacios de almacenamiento dentro
+del procesador o CPU (Unidad Central de Procesamiento). Estos son
+de acceso extremadamente rápido, mucho más rápido que la
+memoria principal (RAM), y se utilizan para almacenar datos y
+resultados intermedios durante el procesamiento de instrucciones.
+
+<h2>
+Función de los Registros en la Arquitectura de Computadoras:
+</h2>
+
+<h4>
+Los registros tienen varias funciones en el ámbito de la arquitectura de computadoras, tales como:
+</h4>
+<center><table border="1">
+<tr>
+<td><h3>Almacenamiento Temporal:</h3> Los
+registros almacenan datos temporales
+que están siendo procesados por la CPU,
+como operandos, direcciones de
+memoria y resultados intermedios. Este
+almacenamiento rápido es crucial para la
+ejecución de instrucciones.
+</td>
+<td><h3>Control de Flujo:</h3> Algunos registros
+están dedicados a controlar el flujo de
+ejecución, como el contador de
+programa (PC, Program Counter), que
+mantiene la dirección de la siguiente
+instrucción que se debe ejecutar
+</td>
+</tr>
+
+<tr>
+<td><h3>Optimización del Rendimiento:</h3> Dado
+que los registros están directamente
+integrados en el procesador, las
+operaciones que involucran registros son
+mucho más rápidas que aquellas que
+requieren acceso a la memoria principal.
+</td>
+<td><h3>Operaciones Matemáticas y Lógicas:
+</h3> En las operaciones aritméticas o lógicas,
+los registros mantienen los valores de
+entrada y salida. Por ejemplo, en una
+suma, los operandos y el resultado
+pueden almacenarse en registros.
+</td>
+</tr>
+</table>
+</center>
+
+<h2>
+Tipos Comunes de Registros:
+</h2>
+Existen varios tipos de registros en una arquitectura de computadora, algunos de los más
+comunes incluyen:
+<p>
+</p>
+
+Registros de Datos:Almacenan los datos que están siendo procesados o manipulados.
+Pueden ser utilizados para guardar operandos en una operación aritmética.
+<br>Registros de Dirección: Almacenan direcciones de memoria, como las direcciones de los operandos o la siguiente instrucción a ejecutar</b>
+<br>Registros de Propósito General:Son registros que pueden ser utilizados por las instrucciones de la CPU para almacenar cualquier dato o dirección. Por lo general, son
+accesibles para la mayoría de las instrucciones</b>
+<br>Registros de Propósito Especial: Estos incluyen registros específicos para el control del flujo, como el contador de programa (PC), el registro de estado (PSW), y el registro de
+instrucciones (IR).</b>
+<br>Registros de Estado (Flags): Estos registros almacenan indicadores de estado que
+muestran el resultado de las operaciones realizadas (por ejemplo, si ocurrió un
+desbordamiento, si un resultado es cero, o si se produjo un error de signo).</b>
+
+<h2>
+1.2.1.4 Buses
+</h2>
+Un bus es un conjunto de líneas de comunicación o conductores que permiten la transferencia
+de datos y señales entre diferentes componentes de la computadora. Los buses son
+fundamentales porque facilitan la comunicación entre la CPU, la memoria, y otros periféricos, como los dispositivos de entrada/salida.
+
+<center>
+  <img src="https://aulavirtual.sld.cu/pluginfile.php/6323/mod_imscp/content/1/bus-direccion-control-datos.jpg" width="30%">
+</center>
+
+<h3>
+Características Importantes de los Buses:
+</h3>
+Velocidad de Transferencia: La velocidad de los buses es crucial para el
+rendimiento general del sistema. Un bus más rápido permite una mayor
+cantidad de datos para ser transferidos en menos tiempo, lo que puede
+mejorar el rendimiento de la CPU.
+<br>Ancho del Bus: El número de líneas en cada tipo de bus es importante.
+Cuanto mayor sea el ancho del bus, más datos se pueden transferir
+simultáneamente. Un bus de 64 bits, por ejemplo, puede transferir más
+datos en cada ciclo de reloj que un bus de 32 bits.</b>
+<br>Sincronización: Los buses generalmente se sincronizan con el reloj del
+sistema. Esto asegura que todas las transferencias de datos y señales se
+realicen de manera ordenada y en el momento correcto.</b>
+
+<h2>
+Función de los Buses en una Computadora:
+</h2>
+
+Transferencia de Datos: Los buses permiten la transferencia de datos entre la CPU, la
+memoria y los dispositivos periféricos. Esto incluye datos que van de la memoria a la CPU
+para ser procesados o desde la CPU a los dispositivos de salida.
+<br>Dirección y Control: Los buses también transmiten señales de control (por ejemplo,
+cuándo leer o escribir datos) y direcciones de memoria (para indicar qué ubicación de
+memoria debe ser accedida)</b>
+
+<h3>
+Bus de Datos (Data Bus):
+</h3>
+
+Función: Transporta los datos entre los distintos componentes del sistema (como la CPU, la
+memoria y los dispositivos de entrada/salida).
+<br>Ancho del bus: El ancho del bus de datos (el número de líneas de bits que puede
+transportar) determina cuántos bits de información se pueden transmitir en paralelo en una
+sola transferencia. Por ejemplo, un bus de 8 bits puede transferir 8 bits a la vez, mientras que un bus de 32 bits puede transferir 32 bits simultáneamente.
+</b>
+<br>Ejemplo: Si el bus de datos tiene un ancho de 32 bits, entonces se puede transferir un valor
+de 32 bits (o 4 bytes) de la memoria a la CPU en una sola operación.</b>
+
+<h2>
+1.2.2 Memoria
+</h2>
+
+La memoria principal es la encargada de almacenar temporalmente los datos e
+instrucciones que la CPU necesita para ejecutar programas. Es fundamental para el
+rendimiento del sistema
+
+<h3>
+Tipos de Memoria Principal
+</h3>
+
+RAM (Random Access Memory)
+<br>Almacena datos e instrucciones temporalmente.</b>
+<br>Es volátil.</b>
+<br>Permite acceso rápido a la CPU.</b>
+<br>Tipos de RAM:</b>
+<br>DRAM (Dynamic RAM): Necesita ser refrescada constantemente.</b>
+<br>SRAM (Static RAM): Más rápida y cara, usada en caché.</b>
+<br>ROM (Read-Only Memory)</b>
+<br>Contiene instrucciones esenciales, como el firmware del sistema.</b>
+<br>No volátil.</b>
+<br>No se puede modificar fácilmente.</b>
+<br>Tipos de ROM:</b>
+<br>PROM (Programmable ROM)</b>
+<br>EPROM (Erasable Programmable ROM)</b>
+<br>EEPROM (Electrically Erasable Programmable ROM)</b>
+
+<h2>
+Memoria en los Sistemas de Computación
+</h2>
+
+La memoria es un componente fundamental de cualquier sistema informático, ya
+que almacena y recupera datos e instrucciones necesarias para la ejecución de
+procesos. Se clasifica en varios tipos según su función, velocidad y volatilidad.
+
+<h3>
+Clasificación de la Memoria
+</h3>
+
+Memoria Volátil: Pierde su contenido cuando se apaga el equipo.
+<br>Memoria RAM (Random Access Memory)</b>
+<br>Memoria Caché</b>
+<br>Registros del procesador</b>
+
+Memoria No Volátil: Retiene los datos incluso sin energía.
+<br>Memoria ROM (Read-Only Memory)</b>
+<br>Dispositivos de almacenamiento (SSD, HDD, USB, SD)</b>
+<br>Memoria Flash</b>
+
+<center>
+  <img src="https://dtutivenc.wordpress.com/wp-content/uploads/2015/04/mem.png" width="30%">
+</center>
+
+<h2>
+1.2.2.1 Conceptos básicos del manejo de la memoria,
+<br>1.2.2.2 Memoria principal</br>
+</h2>
+
+<h3>
+TIPOS DE MEMORIA: Hay diferetntes tipos de memoria como:
+</h3>
+
+MEMORIA CACHE: Almacena datos de acceso rápido para el
+procesador.
+<br>MEMORIA PRINCIPAL(RAM) que guarda temporalmente datos y
+programas en uso.</b>
+<br>MEMORIA SECUNDARIA como discos duros (HDD), SSD, USB,
+donde se almacena la información permanentemente.</b>
+<br>MEMORIA VIRTUAL con espacio del disco duro usado como
+extensión de la RAM cuando esta se llena.</b>
+
+<h3>
+ASIGNACION DE MEMORIA
+</h3>
+
+Estatica: Se reserva una cantidad fija de memoria antes de la
+ejecucion del programa.
+<br>Dinamica: Se asigna y libera memoria en tiempos ejecucion,
+optimizando recursos
+.</b>
+
+<h3>
+JERARQUIA DE MEMORIA
+</h3>
+
+Registros: Los más rápidos, dentro del procesador.
+<br>Memoria Caché: Rápida pero con capacidad limitada.</b>
+<br>RAM: Más grande, pero más lenta que la caché.</b>
+<br>Almacenamiento Secundario: Mucho más grande, pero
+más lento que la RAM.</b>
+
+<h3>
+GESTION DE MEMORIA
+</h3>
+
+Segmentación: Divide la memoria en segmentos lógicos según su
+tipo de uso (código, datos, pila).
+<br>Paginación: Divide la memoria en páginas de tamaño fijo, evitando
+fragmentación.</b>
+<br>Swapping: Mueve procesos entre RAM y disco para optimizar el
+uso de memoria.</b>
+
+<h3>
+FRAGMENTACION DE MEMORIA
+</h3>
+
+Fragmentación Interna: Ocurre cuando los bloques de
+memoria asignados son más grandes de lo necesario.
+<br>Fragmentación Externa: Ocurre cuando hay pequeños bloques
+libres dispersos que no pueden usarse eficientemente.</b>
+
+
+<h3>
+Memoria Virtual
+</h3>
+
+Usa parte del disco duro como una extensión
+de la RAM cuando esta se llena. Sin embargo,
+es más lenta que la RAM real.
+
+<center>
+  <img src="https://www.muycomputer.com/wp-content/uploads/2016/12/9_01_VirtualMemoryLarger.jpg" width="30%">
+</center>
+
+<h2>
+1.2.2.3 Memoria cache
+</h2>
+
+La memoria caché es un tipo de memoria de acceso rápido que
+almacena datos temporales para acelerar el procesamiento y
+mejorar el rendimiento del sistema. Se encuentra entre el
+procesador y la memoria principal (RAM) y permite acceder
+rápidamente a datos que se usan con frecuencia.
+
+<br>Tiene 3 niveles en los cuales esta</b>
+<br>L1(primer nivel) que es el mas rapido y esta dentro del
+procesador pero con poca capacidad.</b>
+<br>L2(Segundo nivel) un poco mas grande que la L1 pero mas lenta.</b>
+L3(Tercer nivel) que esta compartida por varios nucles de la cpu
+y mas grande, tambien es mas lenta que L1 Y L2</b>
+
+
+<h3>
+CARACTERISTICAS DE LA MEMORIA CACHE
+</h3>
+
+Tiene como caracteristicas principales su VELOCIDAD ALTA superando a la
+RAM, su CERCANA UBICACION AL PROCESADOR que se encuentra
+integrado en la CPU o en la placa base, su TAMAÑO PEQUEÑO
+generalmente en KILOBYTES(KB) o MEGABYTES(MB) ademas de su USO
+INTELIGENTE que almacena datos y programas usados recienemente para
+reducir los tiempos de espera.
+
+<br>Como ventajas tenemos que reduce el tiempo de acceso de los datos,
+mejora el rendimiento del procesador y disminuye la carga sobre la
+memoria RAM</b>
+
+
+<h2>
+1.2.3 Manejo de n entradas y salidas
+</h2>
+
+El manejo eficiente de múltiples dispositivos de entrada y salida (E/S) es crucial para
+garantizar un rendimiento óptimo del sistema. Dado que los dispositivos periféricos
+varían en velocidad y características, se implementan diversas técnicas para gestionar
+la comunicación entre la CPU y estos dispositivos.
+Técnicas de Manejo de E/S
+
+
+<h2>
+1.2.3.1 Módulos de entrada/Salida
+</h2>
+
+Los módulos de entrada/salida(E/S) son esenciales ya quepermiten la comunicación entre la CPU y losperiféricos externos.
+
+<h3>
+Funciones Básicas de losMódulos de E/S
+</h3>
+
+Dirección: Se refiere a cómo la CPU selecciona y se comunica
+con un dispositivo de E/S especifico. Cada dispositivo tiene una
+dirección única que la CPU utiliza para enviar y recibir datos.
+<br>Sincronización: Es el proceso de coordinar la transferencia de
+datos entre la CPU y los dispositivos de E/S para asegurar que
+ambos estén listos para enviar o recibir información</b>
+<br>Transferencia: Este es el proceso real de mover dato entre la
+CPU y los dispositivos de E/S. Puede realizarse mediante varios
+métodos, como transferencia por encuesta (polling),
+interrupciones o acceso directo a memoria (DMA).</b>
+
+
+<h3>
+Dispositivos de E/S Comunes
+</h3>
+
+Puertos Paralelos: Permiten la transferencia de
+múltiples bits de datos al mismo tiempo. Son
+rápidos y se utilizan principalmente para
+impresoras.
+<br>Puertos Seriales: Permiten la transferencia de un
+bit a la vez. Son más lentos que los puertos
+paralelos pero son útiles para largas distancias y
+conexiones estables, como módems y dispositivos
+de comunicación,</b>
+
+
+
+<h3>
+Sincronización y Transferencia de Datos
+</h3>
+
+Sincronización Sincrónica: Los datos se envían y reciben en un flujo continuo y
+constante.Es adecuado para dispositivos que necesitan una alta velocidad de
+transferencia y una baja latencia.
+<br>Sincronización Asincrona: Los datos se envían en paquetes con señales de
+control adicionales.Es adecuado para dispositivos que no requieren una
+transferencia de datos continua.</b>
+<br>Transferencia Paralela: Se transfieren varios bits simultáneamente a través de
+múltiples canales. Es rápida pero puede ser costosa y compleja debido a la
+necesidad de múltiples líneas de comunicación.</b>
+<br>Transferencia Serie: Los bits se envían uno a uno a través de un solo canal.Es más
+lenta que la transferencia paralela pero es más simple y económica, y adecuada
+para conexiones de larga distancia.</b>
+
+
+
+
+<h3>
+Acceso directo a la memoria
+</h3>
+
+El acceso directo a memoria (DMA, Direct Memory Access) es un método que permite a ciertos dispositivos de hardware acceder directamente a la memoria principal sin la intervención del procesador. Esto mejora el rendimiento del sistema al liberar a la CPU de la carga de mover datos entre dispositivos de entrada/salida (E/S) y la RAM.
+
+
+<h3>
+Modos de transferencia
+</h3>
+
+Puede operar en diferentes modos, como: Modo ráfaga (burst mode): El controlador de DMA
+transfiere un bloque completo de datos en una sola operación.
+<br>Modo ciclo robado (cycle stealing): Se transfiere un pequeño número de datos en cada ciclo, alternando con las operaciones de la CPU.</b>
+<br>Modo transparente: La transferencia de datos ocurre solo cuando la CPU está inactiva</b>
+
+
+
+<h2>
+1.2.3.2 Entrada/salida programada
+</h2>
+
+Se refiere a un método de comunicación entre la CPU y los dispositivos de E/S
+(como teclados, impresoras o discos duros) en el cual el procesador controla
+directamente las operaciones de entrada y salida mediante instrucciones
+específicas en el programa.
+
+<h3>
+¿Cómo funciona?
+</h3>
+
+Lectura o escritura directa: La CPU ejecuta instrucciones para leer datos
+desde un dispositivo de entrada o escribir datos en un dispositivo de
+salida.
+<br>Espera activa: La CPU espera a que el dispositivo esté listo para enviar o
+recibir datos, lo cual puede consumir tiempo de procesamiento.</b>
+<br>Transferencia de datos: Una vez que el dispositivo está listo, la CPU
+transfiere los datos a través de registros de E/S o memoria.</b>
+
+<h2>1.2.3.3 Entrada/Salida mediante interrupciones.</h2>
+ Esta técnica pretende evitar que el procesador pare o haga trabajo improductivo, mientras que espera a que el periférico esté preparado para hacer una nueva operación.
+ El hardware de la computadora, necesita tener un conjunto de líneas de control del bus del sistema y de petición de interrupción.
+<br>Funcionamiento:
+<br>El procesador ejecuta instrucciones de un programa. Al finalizar cada instrucción comprueba si se ha producido una interrupción.
+<br>En caso afirmativo se salva el estado actual del programa (contador del programa y registros) y se salta a ejecutar la rutina de servicio correspondiente.
+<br>La rutina de servicio efectúa las operaciones apropiadas en la E/S para realizar la transferencia de datos solicitada.
+<br>Al finalizar la rutina de servicio se recupera el estado de la CPU y se continúa ejecutando el programa que se estaba ejecutando antes de la interrupción.
+<br>Las interrupciones pueden ser:
+<br>ENMASCARABLES (se pueden dejar de atender por software)
+<br>NO ENMASCARABLES (siempre atendidas)
+<br>Dos formas de conocer la dirección/posición (vector) donde se encuentra la rutina de servicio de la interrupción
+<br>Vector de interrupciones siempre FIJO ó el periférico suministra el vector de interrupción
+</p>
+<h2>1.2.3.4 Acceso directo a memoria.</h2>
+<p>El DMA (acceso directo a la memoria) permite que el dispositivo de red mueva los datos del paquete directamente a la memoria del sistema, reduciendo la utilización de la CPU. Sin embargo, la frecuencia y los intervalos aleatorios en los cuales los paquetes llegan no permiten que el sistema ingrese un estado de energía más bajo.
+El coalescentes DMA permite que el NIC recoja los paquetes antes de que inicie un evento DMA. Esto puede aumentar la latencia de la red, pero también aumenta las probabilidades de que el sistema consuma menos energía.
+Los adaptadores y dispositivos de red basados en el controlador Ethernet Intel® I350 (y controladores posteriores) Asistencia la fusión de DMA.
+Los valores coalescentes más altos de DMA resultan en más energía guardada, pero pueden aumentar la latencia de red de su sistema.
+Si habilita la coalescación de DMA, también debe establecer la tasa de moderación de interrupciones en "mínimo".
+Esto minimiza el impacto de latencia impuesto por la coalescencia de DMA y da como resultado un mejor rendimiento de rendimiento de red máximo.
+Debe habilitar la coalescencia de DMA en todos los puertos activos del sistema. Usted no puede ganar ningún ahorro de energía si se habilita sólo en algunos de los puertos en su sistema. También hay varias configuraciones de BIOS, plataformas y aplicaciones que afectarán a su potencial ahorro energético.
+</p>
+<h2>1.2.3.5 Canales y procesadores de entrada/salida</h2>
+<p>EL canal de E/S es una extensión del bus del 8088. Este canal contiene un bus de datos bidireccinal de 8 bits, 20 líneas de dirección, 6 niveles de interrupción, líneas de control para las operaciones de lectura y escritura para la memoria y la E/S, líneas de control de 3 canales de DMA, y líneas de control para el tiempo de refresco de memoria.
+Los canales de E/S proporcionan una línea Ready para permitir operaciones con dispositivos de memoria o de E/S lentos.
+Cuando la línea no está activada por un dispositivo, el procesador genera ciclos de lectura y esritura a memoria que toman cuatro ciclos de 210 ns (esto es, 840 ns) por byte.
+Todos los ciclos de lectura y escritura a E/S generados por el procesador requieren de cinco ciclos de 210 ns de reloj (1.05 ms) por byte.
+Todas las transferencias DMA requieren de cinco ciclos de reloj para un ciclo de tiempo de 1.05 ms por byte.
+Los ciclos de reloj se presentan aproximadamente cada 15 m sec y requieren de cinco ciclos de reloj.
+Los dispositivos de E/S están direccionados utilizando un mapeo de E/S con el espacio de direccionamiento. El canal proporciona a las tarjetas de E/S 512 direcciones de dispositivos.
+</p>
+<h2>1.2.4 Buses.</h2>
+<p>En arquitectura de computadores, el bus es un sistema digital que transfiere datos entre los componentes de una computadora. Está formado por cables o pistas en un circuito impreso, dispositivos como resistores y condensadores, además de circuitos integrados.
+Un bus es una trayectoria por la cual viajan los datos en una computadora para comunicar los distintos dispositivos entre sí.
+Los principales buses que se encuentran dentro de una PC son: los Buses del micro-procesador, los Buses de memoria y los Buses del sistema.
+</p>
+<h2>1.2.4.1 Tipos de buses.</h2>
+<p>Existen dos tipos de transferencia en los buses:
+<br>Serie: El bus solamente es capaz de transferir los datos bit a bit. El bus tiene un único cable que transmite la información.
+<br>Paralelo: El bus permite transferir varios bits simultáneamente, por ejemplo 8 bits.
+<br>Aunque en primera instancia parece mucho más eficiente la transferencia en paralelo, esta presenta inconvenientes:
+<br>La frecuencia de reloj en el bus paralelo tiene que ser más reducida.
+<br>La longitud de los cables que forman el bus está limitada por las posibles interferencias, el ruido y los retardos en la señal.
+<br>Además, los modernos buses serie están formados por varios canales: En este caso se transmite por varios buses serie simultáneamente.
+En los primeros computadores electrónicos, era muy habitual encontrar buses paralelos, quedando los buses serie dedicados para funciones de menor entidad y dispositivos lentos, como el teclado. La tendencia en los últimos años es reemplazar los buses paralelos por buses serie (que suelen ser multicanal). Estos son más difíciles de implementar, pero están dejando velocidades de transferencia más elevadas, además de permitir longitudes de cable mayores.
+</p>
+<h2>1.2.4.2 Estructura de los buses.</h2>
+<p>Un bus es un medio compartido de comunicación constituido por un conjunto de líneas (conductores) que conecta las diferentes unidades de un computador. La principal función de
+un bus será, pues, servir de soporte para la realización de transferencias de información entre dichas unidades.
+La unidad que inicia y controla la transferencia se conoce como master del bus para dicha transferencia, y la unidad sobre la que se realiza la transferencia se conoce como slave. Los papeles de master y slave son dinámicos, de manera que una misma unidad puede realizar ambas funciones en transferencias diferentes.
+Por ejemplo, una unidad de DMA hace de slave en la inicialización que realiza el master, la CPU, para una operación de E/S. Sin embargo, cuando comienza la operación, la unidad de DMA juega el papel de master frente a la memoria, que en esta ocasión hace de slave.
+Para garantizar el acceso ordenado al bus, existe un sistema de arbitraje, centralizado o distribuido, que establece las prioridades cuando dos o más unidades pretenden acceder al mismo tiempo al bus, es decir, garantiza que en cada momento sólo exista un master. Para establecer el tiempo de duración de las transferencias y que sea conocido tanto por el master como por el slave, un bus debe disponer de los medios necesarios para la sincronización master-slave.
+</p>
+<h2>1.2.4.3 Jerarquias de buses.</h2>
+<p>Los computadores modernos tienen por lo menos 4 buses diferentes (bus interno, bus del procesador, bus del caché, bus de memoria, bus local de E/S, bus estándar de E/S).
+Se les considera una jerarquía, porque cada bus se conecta al nivel superior a él dentro del computador, integrando así todas las partes del computador.
+Cada uno es generalmente más lento que el que se encuentra sobre él, siendo el bus del procesador el más rápido tratándose de que este es el dispositivo más rápido del computador. Para mejorar el rendimiento del bus, las jerarquías de buses fueron implementadas cada vez más.
+</p>
+<h2>1.2.5 Interrupciones.</h2>
+<p>Una interrupción consiste en un mecanismo que le permite al hardware la invocación de una rutina fuera del control del programa que está siendo ejecutado. Es una señal recibida por el procesador de una computadora, que indica que debe «interrumpir» el curso de ejecución actual y pasar a ejecutar código específico para tratar esta situación.
+Una interrupción es una suspensión temporal de la ejecución de un proceso, para pasar a ejecutar una subrutina de servicio de interrupción, la cual, por lo general, no forma parte del programa, sino que pertenece al sistema operativo o al BIOS. Una vez finalizada dicha subrutina, se reanuda la ejecución del programa.
+Las interrupciones son generadas por los dispositivos periféricos habilitando una señal del CPU (llamada IRQ del inglés "interrupt request") para solicitar atención del mismo.
+Por ejemplo. cuando un disco duro completa una lectura solicita atención al igual que cada vez que se presiona una tecla o se mueve el ratón.
+La primera técnica que se empleó para esto fue el polling, que consistía en que el propio procesador se encargara de sondear los dispositivos periféricos cada cierto tiempo para averiguar si tenía pendiente alguna comunicación para él. Este método presentaba el inconveniente de ser muy ineficiente, ya que el procesador consumía constantemente tiempo y recursos en realizar estas instrucciones de sondeo.
+</p>
+
+<p>
+<a href="jucj.html">regresar</a>
+</p>
+
+</body>
+</font>
+</html>

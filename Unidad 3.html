@@ -1,0 +1,469 @@
+<html>
+
+<head>
+
+<title>
+Unidad 3 Selección de componentes para ensamble de equipo de computo
+</title>
+</head>
+<font face="arial">
+<body bgcolor="#d6d7c6" text="#000000">
+<h3>
+UNIDAD CENTRAL DE PROCESAMIENTO (CPU)
+</h3>
+
+La Unidad Central de Procesamiento, comúnmente conocida como CPU, es el
+componente principal de una computadora encargado de interpretar y ejecutar las
+instrucciones de los programas. Actúa como el "cerebro" del sistema, procesando
+datos y realizando cálculos necesarios para el funcionamiento de las aplicaciones y del
+propio sistema operativo. 
+
+<p>
+</p>Una CPU típica consta de los siguientes componentes:
+<br>• Unidad Aritmético-Lógica (ALU): Realiza operaciones
+matemáticas y lógicas.</b>
+<br>• Unidad de Control: Dirige y coordina las operaciones de la
+computadora, interpretando las instrucciones y gestionando
+su ejecución.</b>
+<br>• Registros: Pequeñas áreas de almacenamiento que
+contienen datos temporales y direcciones utilizadas durante
+el procesamiento.</b>
+
+<h3>
+CONTROL DEL BUS
+</h3>
+
+En la arquitectura de las computadoras, el bus de control es una parte esencial del sistema de buses que permite la comunicación entre la CPU y otros dispositivos dentro del equipo. Mientras que el bus de direcciones transporta información sobre la ubicación de los datos y el bus de datos transfiere los propios datos, el bus de control transmite señales de comando desde la CPU y recibe señales de estado de los dispositivos. 
+
+<h3>
+FUNCIONES DEL CONTROL DEL BUS
+</h3>
+
+•Sincronización de operaciones:
+<br>•Coordina la ejecución de instrucciones en la CPU y la comunicación con la memoria y dispositivos de entrada/salida.</b>
+Envía señales de reloj para asegurar que todos los componentes trabajen en sincronía.
+<br>•Gestión de permisos y acceso a la memoria:
+•Controla el acceso a la memoria RAM, evitando conflictos entre múltiples dispositivos que intentan leer o escribir datos
+simultáneamente.</b>
+Indicación del tipo de operación:
+<br>•Transporta señales que indican si la operación es de lectura o escritura.
+•Especifica si la operación involucra memoria, entrada/salida o registros internos de la CPU.</b>
+Gestión de interrupciones:
+<br>•Recibe y maneja interrupciones generadas por dispositivos externos (como el teclado o el disco duro), pausando
+temporalmente la ejecución de la CPU para atenderlas.</b>
+Activación y desactivación de dispositivos:
+<br>•Envía señales de habilitación o deshabilitación a dispositivos periféricos según sea necesario.</b>
+Control de errores:
+<br>•Detecta errores en la transferencia de datos y puede solicitar reintentos en caso de fallos en la comunicación.</b>
+
+
+<h3>
+3.1.3 - Puentes de entrada/salida
+</h3>
+
+<table border="1">
+<tr>
+<td>puente sur</td>
+<td>puente norte</td>
+</tr>
+
+<tr>
+<td>El lado sur se encarga de los dispositivos
+como la comunicación con las tarjetas de
+expansión y demás chips que requieren una
+mayor velocidad de transferencia de datos.
+<br>• Controla el flujo de datos con la BIOS, los
+dispositivos de entrada/salida (E/S), las
+unidades IDE, las tarjetas de expansión PCI y
+los dispositivos externos USB</b>
+<br>• También se le conoce como Concentrador de
+Controladores de Entrada/Salida (I/O
+Controller Hub, ICH)</b>
+• Coordina los diferentes dispositivos de
+entrada y salida y algunas otras
+funcionalidades de baja velocidad</td>
+<td>El lado norte se encarga de controlar los
+dispositivos de almacenamiento y demás
+periféricos que tienen dentro del CPU una
+velocidad de transferencia de datos menor.
+<br>• Controla el flujo de datos entre la CPU, la
+memoria RAM y la tarjeta gráfica</b>
+<br>• Determina el tipo de procesador y memoria
+RAM que admite la placa base</b>
+<br>• Conecta la CPU al puente norte mediante el
+bus frontal (FSB)</b>
+• Conecta el puente norte con el chip del
+puente sur mediante el bus PCI
+</td>
+</tr>
+</table>
+<center>
+<img src="https://arceodanielaj.wordpress.com/wp-content/uploads/2015/11/w5g38.jpg">
+</center>
+
+<h3>
+3.1.4 - Controlador De Interrupciones
+</h3>
+
+Un controlador de interrupciones es un componente que reúne eventos de interrupción
+de hardware de varias fuentes y los presenta al procesador , lo que permite un manejo
+eficiente de eventos en tiempo real sin la necesidad de un sondeo constante por parte
+del procesador, permitiendo un manejo eficiente de eventos en tiempo real.
+
+<p>
+¿Cómo funciona?
+
+<br>1. El controlador de interrupciones reúne las solicitudes de interrupción de los
+dispositivos.</b>
+<br>2. Establece prioridades entre las solicitudes de interrupción.</b>
+<br>3. Selecciona la solicitud de interrupción que informará al procesador principal.</b>
+<br>4. Recibe una notificación con el número de interrupción.</b>
+<br>5. Ejecuta la rutina de servicio de interrupciones (ISR) correspondiente.</b>
+</p>
+
+<center>
+  <img src="https://www.teknofilo.com/wp-content/uploads/2023/06/Intel-8088-1000x563.jpg" width="20%">
+</center>
+
+<h3>
+ACCESO DIRECTO A MEMORIA (DMA)
+</h3>
+
+<br>• El acceso directo a memoria (DMA, del inglés direct memory access) permite a cierto tipo de componentes de una computadora acceder a la memoria del sistema para leer o escribir independientemente de la unidad central de procesamiento (CPU), DMA es una
+característica esencial en todos los ordenadores modernos, ya que permite a dispositivos de diferentes velocidades comunicarse sin someter a la CPU a una carga masiva de interrupciones.</b>
+
+<br>• Una transferencia DMA consiste principalmente en
+copiar un bloque de memoria de un dispositivo a otro. En
+lugar de que la CPU inicie la transferencia, la
+transferencia se lleva a cabo por el controlador DMA. Un
+ejemplo típico es mover un bloque de memoria desde
+una memoria externa a una interna más rápida. Tal
+operación no ocupa al procesador y, por ende, éste
+puede efectuar otras tareas.</b>
+
+<center>
+  <img src="data:image/png;base64,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" width="20%">
+</center>
+
+<h3>ROBLEMAS DE COHERENCIA EN LA MEMORIA CACHE</h3>
+
+<br>La DMA puede llevar a problemas de coherencia de caché, Cuando la CPU accede a X lugar en la memoria, el valor actual se almacena en la caché. Si se realizan operaciones posteriores en X, se actualizará la copia en caché de X, pero no la versión de memoria externa de X. Si la caché no se vacía en la memoria antes de que otro dispositivo intente acceder a X, el dispositivo recibirá un valor caducado de X.</b>
+
+<p>
+<h3>Trasferencias</h3>
+• Durante las operaciones del DMA, el rendimiento del sistema puede verse afectado debido a que este dispositivo hace un uso intensivo del bus y por lo tanto la cpu no puede leer datos de memoria, Esto provoca que mientras el DMA está operando, la cpu deba esperar a que finalice dicha tarea sin ejecutar ninguna instrucción. Para solventar esto, existe una memoria cache dentro de la CPU que permite a ésta seguir trabajando mientras el DMA mantiene ocupado el bus
+</p>
+
+<table border="1">
+<tr>
+<td>
+<h3>
+CIRCUITOS DE TEMPORIZACIÓN
+</h3>
+</td>
+<td>
+<h3>
+ESTADOS DE ESPERA
+</h3>
+</td>
+</tr>
+
+<tr>
+<td>
+<br>Dispone de dos salidas al igual que un flip flop, una salida es la
+inversa de la otra, el temporizador solamente posee un estado
+estable el otro es inestable, permanece en su estado estable,
+hasta que se activa con un pulso de entrada, una vez que se
+activa cambia a su estado inestable y ahí permanece por un
+periodo fijo de tiempo, este tiempo lo determina una constante de
+tiempo RC externa que se conecta al temporizador, después de
+que transcurre el tiempo tw , las salidas dos salidas del
+temporizador regresan a su estado estable, hasta que se activan
+otra vez.</b>
+
+<p>La finalidad de la temporización es retardar el paso de una señal
+desde un nodo del circuito hasta otro punto, el diseño de este
+circuito se realiza con un dispositivo que se conoce con el nombre
+de “monoestable” ó “temporizador”, éste elemento electrónico
+dispone de una entrada y una salida, Se dispone de dos tipos de
+comportamiento en que se manifiestan las salidas de los
+temporizadores, "redisparables" y "no redisparables" y su entrada
+responde a dos tipos de disparo, "activación" y "desactivación"</p>
+</td>
+
+<td>Cuando se conectan tarjetas al bus de la PC, un problema
+común es igualar la velocidad de los ciclos del bus con la de las
+tarjetas. Es común que una tarjeta sea más lenta que el bus. Así,
+el bus de la PC esta diseñado para resolver este problema. La
+señal READY del bus se puede usar para extender la longitud
+del ciclo del bus para igualar una tarjeta lenta o parar el bus del
+sistema hasta que se sincronice con el ciclo de la tarjeta.
+</td>
+</tr>
+</table>
+
+
+<h3>
+3.1.7: CIRCUITOS DE CONTROL
+<br>3.1.8: CONTROLADOR ES DE VIDEO</b>
+</h3>
+
+Funcion:
+Coordinan y gestionan las señales que controlan las operaciones de la CPU y otros componentes del sistema.
+<br>Propósito:
+Aseguran que las diferentes partes del sistema (memoria, ALU, registros, etc.) trabajen en conjunto de manera sincronizada.</b>
+<p>
+</p>
+Tipos de control:
+<br>Secuencial:
+Las señales de control se activan en un orden específico, paso a paso.</b>
+<br>Combinacional:
+Las señales de control se generan a través de combinaciones lógicas, dependiendo del estado de las instrucciones.</b>
+<p>
+</p>
+Componentes principales:
+<br>Registro de control:
+Almacena valores de control.</b>
+<br>Decodificador de instrucciones:
+Identifica el tipo de instrucción que se ejecutará.</b>
+<br>Generador de señales de control:
+Envía señales específicas para ejecutar las instrucciones.</b>
+<br>Contador de programa:
+Mantiene la dirección de la siguiente instrucción a ejecutar.</b>
+
+<p>
+</p>
+Función:
+Gestionan la salida visual de la computadora, tomando los datos gráficos y convirtiéndolos en señales que pueden ser interpretadas por el monitor.
+<br>Propósito: Permiten que la computadora muestre imágenes, texto y gráficos en la pantalla.</b>
+<p>
+</p>
+Principales funciones:
+<br>Generación de imágenes:
+Convierte datos en señales que el monitor puede mostrar.</b>
+<br>Manejo de resolución: Ajusta la cantidad de píxeles y la resolución de la pantalla.</b>
+<br>Sincronización de señales: Envía señales al monitor para asegurarse de que los píxeles se dibujen correctamente.</b>
+<p>
+</p>
+Tipos:
+<br>VGA:
+Un estándar antiguo con resoluciones básicas.</b>
+<br>Tarjetas gráficas modernas: Con soporte para gráficos en 3D, resoluciones altas y procesamiento paralelo (por ejemplo, tarjetas de Nvidia o AMD).</b>
+<p>
+</p>
+Funciones adicionales:
+<br>Buffering de imágenes:
+Almacena imágenes antes de enviarlas al monitor para evitar parpadeos.</b>
+<br>Aceleración de hardware:
+Las GPU modernas aceleran el procesamiento gráfico, mejorando el rendimiento en videojuegos y aplicaciones de diseño.</b>
+
+<h3>
+3.2. Aplicaciones
+</h3>
+
+En el contexto de la arquitectura de computadoras, las aplicaciones se refieren al conjunto de programas y procesos que hacen uso de los recursos de hardware y software de una computadora para realizar tareas específicas. Las aplicaciones pueden ser muy diversas y van desde sistemas operativos hasta programas de procesamiento de textos, navegadores web, videojuegos y software de diseño. Cada aplicación interactúa con la computadora para cumplir su propósito, utilizando recursos como la CPU, memoria, almacenamiento, y dispositivos de entrada y salida.
+
+<h3>
+3.2.1 Entrada / Salida (E/S)
+</h3>
+
+ntrada/Salida (E/S) hace referencia al conjunto de dispositivos y técnicas que permiten a una computadora interactuar con el mundo exterior, ya sea recibiendo datos (entrada) o enviándolos (salida). Este proceso es crucial para que las aplicaciones puedan recibir información del usuario o de otros sistemas y devolver resultados de manera comprensible.
+<center>
+<table border="1">
+<tr>
+<td>Dispositivos de entrada</td>
+<td>Dispositivos de salida</td>
+</tr>
+
+<tr> 
+<td><img src="https://static.wikia.nocookie.net/marisolorjuelaysirleypaez900054/images/f/fa/Entrada.png/revision/latest?cb=20160229011440&path-prefix=es" width="50%"></td>
+
+<td><img src="https://s1.significados.com/foto/ejemplos-de-dispositivos-de-salida.jpg?class=article" width="50%"></td>
+</tr>
+</table>
+</center>
+
+
+<h3>
+Mecanismos de E/S
+</h3>
+
+Los dispositivos de E/S están gestionados por el sistema operativo, que controla el flujo de datos entre la CPU, los dispositivos y la memoria. Existen diferentes tipos de E/S, como la E/S Programada, la E/S con interrupciones y la E/S con acceso directo a memoria (DMA). Cada uno tiene sus ventajas y desventajas dependiendo de la eficiencia y el tipo de tarea que se está realizando.
+
+<table border="1">
+<tr>
+<td>E/S PROGRAMADA</td>
+<td>E/S CON INTERRUPCIONES</td>
+<td>E/S CON ACCESO DIRECTO A MEMORIA</td>
+</tr>
+
+<tr>
+<td>Ejemplo: Cuando un programa accede directamente a un dispositivo (como un teclado o un ratón) para leer datos, haciendo que la CPU espere hasta que el dispositivo esté listo para enviar los datos. Esto es sencillo, pero ineficiente, ya que la CPU puede perder tiempo esperando</td>
+<td>Ejemplo: Si un usuario presiona una tecla en el teclado, el dispositivo de entrada interrumpe el flujo de trabajo de la CPU para informarle que hay datos disponibles. La CPU puede entonces leer los datos de manera eficiente sin tener que estar constantemente verificando si el dispositivo está listo, optimizando el uso del tiempo de procesamiento</td>
+<td>Ejemplo: En un sistema de almacenamiento (como un disco duro), cuando se transfiere una gran cantidad de datos de manera continua a la memoria sin que la CPU esté directamente involucrada. Esto permite liberar a la CPU para otros procesos mientras se realiza la transferencia de datos, mejorando la eficiencia en tareas que requieren grandes volúmenes de datos, como en la edición de video.</td>
+</tr>
+</table>
+
+<img src="D:\OneDrive\Imágenes\Screenshots\Captura de pantalla 2025-05-09 150707.png">
+
+<h3>
+Fuentes de alimentación
+</h3>
+
+Una fuente de alimentación es un dispositivo encargado de convertir la energía eléctrica de la red (corriente alterna o CA) en energía utilizable por los componentes electrónicos de una computadora (corriente directa o CD). Sin una fuente de alimentación, ningún componente del sistema podría funcionar.
+
+<h3>
+Funciones principales
+</h3>
+
+Conversión de voltaje: Convierte 120V o 220V CA en voltajes bajos de CD (como 12V, 5V, 3.3V).
+<p>
+</p>
+Distribución de energía: Proporciona energía a componentes como:
+<br>Placa base (motherboard)</b>
+<br>Disco duro</b>
+<br>Unidad de estado sólido (SSD)</b>
+<br>Tarjeta gráfica (GPU)</b>
+<br>Ventiladores</b>
+<p>
+</p>
+Protección: 
+<br>Protege los componentes contra:</b>
+<br>Sobrecargas</b>
+<br>Cortocircuitos</b>
+<br>Picos de voltajes</b>
+
+Este componente es esencial ya que asegura el correcto funcionamiento y la vida útil de los componentes. Una fuente puede causar inestabilidad, fallos o daños.
+
+<h3>
+Tipos de fuentes de alimentación
+</h3>
+
+<br>AT (Advanced Technology): Son antiguas, poco eficientes, con conector de encendido físico directo.</b>
+<br>ATX (Advanced Technology Extended): Es el estándar actual, el apagado y encendido es controlado por el sistema operativo, es más eficiente y segura.</b>
+<br>SFX (Small Form Factor Extended): es una versión compacta del ATX, es ideal para gabinetes pequeños, misma funcionalidad que la ATX, más costoso por su diseño compacto.</b> 
+
+
+
+<h3>
+3.3: AMBIENTES DE SERVICIO
+</h3>
+
+se refiere al entorno o conjunto de recursos y servicios que permite que los
+sistemas informáticos y las aplicaciones operen de manera eficiente.
+estos ambientes proporcionan los medios necesarios para la ejecución de tareas y
+aplicaciones, asegurando que todos los componentes del sistema estén
+interconectados y operando correctamente
+
+<h4>
+LOS AMBIENTES DE SERVICIO PUEDEN INVOLUCRAR DIVERSAS CAPAS Y RECURSOS, INCLUYENDO:
+</h4>
+
+<br>• Sistemas Operativos: Gestionan la memoria, los procesos y los dispositivos de entrada/salida.</b>
+<br>• Redes: Permiten la comunicación entre diferentes computadoras y sistemas.</b>
+<br>• Entornos de Ejecución: Donde las aplicaciones se ejecutan, como máquinas virtuales o contenedores.</b>
+<br>• Bases de Datos: Proveen almacenamiento y acceso a datos para las aplicaciones.</b>
+<br>• Servicios en la Nube: Infraestructura y plataformas que se ofrecen a través de Internet (IaaS, PaaS, SaaS).</b>
+<br>• Seguridad: Mecanismos para proteger datos y garantizar el acceso solo a usuarios autorizados.</b>
+<br>• Ambientes de Desarrollo: Herramientas que los desarrolladores usan para crear y probar aplicaciones.</b>
+
+
+<h3>
+3.3.1-NEGOCIOS 
+</h3>
+
+La tecnología en general ha sido la causa principal y la acción más directa
+para la transformación del trabajo de las organizaciones. Tanto los bienes de
+capital (computadores, teléfonos, videos, grabadoras, etc.), como los
+programas y sistemas de información y comunicación en general, han
+incrementado enormemente la productividad y eficiencia de las organizaciones
+
+<p>
+Tenemos como ejemplos los siguientes: bases de datos en redes de todo
+orden y topología, sistemas de reservaciones en aerolíneas, sistemas de
+contabilidad y nóminas, archivos clínicos en centros de salud, sistemas de
+conmutación electrónica y un sin número de otras aplicaciones a procesos
+administrativos.
+</p>
+
+Existen tres modalidades mas comunes en el trabajo de los sistemas de
+informática
+
+<br>• Usos de procesos aritméticos; Llevan a cabo procesos de operaciones
+básicas como (suma, resta, multiplicación y división).</b>
+<br>• Ejecución de funciones lógicas; fijan pasos a seguir ante diferentes
+situaciones preestablecidas, tal es el caso del control de pago por horas
+suplementarias laboradas.</b>
+<br>• operaciones de entrada /salida; es un proceso en el cual la información
+es generada a traves de una unidad central de procesamiento (cpu) para
+almacenamiento y uso posterior, como el caso de los sistemas de nomina
+de pagos, en los que se introduce un estandar de datos y sale un cheque.</b>
+
+
+<h3>
+3.3.2 INDUSTRIA
+</h3>
+
+¿Cuál es el uso de la computadora en la industria?
+<br>Son ideales para las cadenas logísticas, gestionar almacenes, identificar
+productos, automatizar fábricas o ensamblaje, así como para la
+preparación de pedidos. Además, al ser adaptados especialmente para
+soportar los entornos industriales, estos dispositivos tendrán una gran
+durabilidad.<b>
+En la industria automotriz, por ejemplo, se utilizan para trabajos de
+diseño e ingeniería, control de calidad y pruebas, gestión de producción
+y gestión de flotas.
+<p>
+</p>
+
+¿Qué son las computadoras industriales?
+<br>Una PC industrial o una computadora industrial es una solución robusta
+diseñada para satisfacer los requisitos ambientales más exigentes, como
+la protección contra líquidos y polvo, temperaturas extremas, fuertes
+golpes y vibraciones.</b>
+
+<p>
+</p>
+¿Cómo benefician las computadoras a la industria?
+<br>Una computadora industrial siempre ejecutará sus tareas bajo procesos
+seguros y sin descuidar la eficacia del control de las operaciones, por ello
+resultan ser aparatos ideales para almacenes, flotas comerciales o
+cualquier otra industria que requiera gestión y eficiencia en sus
+actividades.</b>
+
+<h3>
+3.3.3 COMERCIO ELECTRÓNICO
+</h3>
+
+El comercio electrónico es un entorno donde se realizan transacciones comerciales a través de internet. Este ambiente depende totalmente de infraestructura tecnológica y sistemas informáticos robustos. La arquitectura de computadoras en este entorno debe estar diseñada para soportar altos volúmenes de datos, múltiples usuarios simultáneos y asegurar una experiencia rápida y segura.
+
+<p>
+</p>
+Características que debe cumplir los equipos
+<br>• Alto rendimiento: Procesa muchas solicitudes al mismo tiempo con rapidez y eficiencia.</b>
+<br>• Escalabilidad: Se adapta al crecimiento de usuarios o transacciones (uso de la nube).</b>
+<br>• Alta disponibilidad: Funciona 24/7 con respaldo y balanceo de carga.</b>
+<br>• Seguridad: Protege datos con cifrado, firewalls y autenticación.</b>
+<br>• Interconectividad: Compatible con múltiples dispositivos y sistemas externos.</b>
+<br>• Soporte de software: Ejecuta apps y sistemas como ERP, CRM y carritos de compras sin fallos.</b>
+
+<p>
+</p>
+Importancia
+<br>El comercio electrónico requiere una infraestructura tecnológica sólida para funcionar correctamente.</b>
+Esto incluye:
+<br>• Hardware: Servidores, centros de datos, dispositivos del cliente.</b>
+<br>• Software: Sistemas operativos, bases de datos, plataformas web y apps.</b>
+<br>• Redes: Conectividad estable y rápida para transferencias de datos y pagos en tiempo real.</b>
+<p>
+</p>
+La arquitectura debe diseñarse para ser eficiente, segura, escalable y siempre disponible. Por eso se utilizan soluciones modernas
+como la nube, arquitecturas distribuidas, virtualización y balanceo de carga.
+
+<p>
+<a href="jucj.html">regresar</a>
+</p>
+
+</body>
+</font>
+</html>
